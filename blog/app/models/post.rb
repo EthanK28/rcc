@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-  validates :title, :presence => true, :length => { :minimum => 4}
+  validates :title, :presence => true
+  has_many :comments
 end
